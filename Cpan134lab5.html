@@ -4,44 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="student_form">
+    <div id="studentform">
         <form>
-            <label for="first_name">First name</label>
+            <label class="labelf" for="first_name">First name</label>
             <input type="text" id="first_name"><br>
 
-            <label for="Last_name">Last name</label>
+            <label class="labelf" for="Last_name">Last name</label>
             <input type="text" id="Last_name"><br>
 
-            <label for="gender">Gender</label>
-            <input type="radio" id="male">
-            <label for="male">Male</label>
-
-            <input type="radio" id="female">
+            <label class="labelf" for="gender">Gender</label>
+            <input type="radio" id="male" name="gender">
+            <label class="male1" for="male">Male</label>
+            <input type="radio" id="female" name="gender">
             <label for="female">Female</label>
+            <br>
+            
 
-            <label for="age">Age</label>
+            <label class="labelf" for="age">Age</label>
             <input type="text" id="age"><br>
 
-            <label for="date_of_birth">Date of Birth</label>
+            <label class="labelf" for="date_of_birth">Date of Birth</label>
             <input type="date" id="date_of_birth"><br>
 
-            <label for="email_address">Email Address</label>
+            <label class="labelf" for="email_address">Email Address</label>
             <input type="email" id="email_address"><br>
 
-            <label for="password">Password</label>
+            <label class="labelf" for="password">Password</label>
             <input type="password" id="password"><br>
 
-            <label for="confirm_password">Confirm Password</label>
-            <input type="password" id="age"><br>
+            <label class="labelf" for="confirm_password">Confirm Password</label>
+            <input type="password" id="password"><br>
 
-            <label for="phone">Phone</label>
+            <label class="labelf" for="phone">Phone</label>
+            <select id="phone">
+                <option value="647"></option>
+                <option value="416"></option>
+                <option value="495"></option>
+                <option value="476"></option>
+                <option value="453"></option>
+                <option value="649"></option>
+            </select>
             <input type="tel" id="phone"><br>
 
-            <label for="address">Address</label>
+            <label  class="labelf address" for="address">Address</label>
             <textarea name="address" id="address" cols="30" rows="9"></textarea><br>
-            <label for="state" >State</label>
+
+
+            <label class="labelf" for="state" >State</label>
             <select id="state">
                 <option value="--Select your state--">--Select your state--</option>
                 <option value="ontario">Ontario</option>
@@ -50,7 +62,7 @@
                 <option value="saskatchewan">Saskatchewan</option>
                 <option value="manitoba">Manitoba</option>
             </select>
-            <label for="pin "
+            <label class="labelf" for="pin "></label>
 
         </form>
 
