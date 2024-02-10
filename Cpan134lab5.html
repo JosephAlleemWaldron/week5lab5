@@ -5,15 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 <body>
     <div id="studentform">
+        <h2>STUDENT REGISTRATION FORM</h2>
         <form>
             <label class="labelf" for="first_name">First name</label>
-            <input type="text" id="first_name"><br>
+            <input type="text" id="first_name" placeholder="First name"><br>
 
             <label class="labelf" for="Last_name">Last name</label>
-            <input type="text" id="Last_name"><br>
+            <input type="text" id="Last_name" placeholder="Last name"><br>
 
             <label class="labelf" for="gender">Gender</label>
             <input type="radio" id="male" name="gender">
@@ -24,33 +26,33 @@
             
 
             <label class="labelf" for="age">Age</label>
-            <input type="text" id="age"><br>
+            <input type="text" id="age" placeholder="Enter your age"><br>
 
             <label class="labelf" for="date_of_birth">Date of Birth</label>
-            <input type="date" id="date_of_birth"><br>
+            <input type="date" id="date_of_birth" placeholder="dd-mm-yyyy"><br>
 
             <label class="labelf" for="email_address">Email Address</label>
-            <input type="email" id="email_address"><br>
+            <input type="email" id="email_address" placeholder="Enter your email"><br>
 
             <label class="labelf" for="password">Password</label>
-            <input type="password" id="password"><br>
+            <input type="password" id="password" placeholder="Enter your password min 8 characters"><br>
 
             <label class="labelf" for="confirm_password">Confirm Password</label>
-            <input type="password" id="password"><br>
+            <input type="password" id="password" placeholder="Confirm password"><br>
 
             <label class="labelf" for="phone">Phone</label>
             <select id="phone">
-                <option value="647"></option>
-                <option value="416"></option>
-                <option value="495"></option>
-                <option value="476"></option>
-                <option value="453"></option>
-                <option value="649"></option>
+                <option value="647">647</option>
+                <option value="416">416</option>
+                <option value="495">495</option>
+                <option value="476">476</option>
+                <option value="453">453</option>
+                <option value="649">496</option>
             </select>
-            <input type="tel" id="phone"><br>
+            <input type="tel" id="phone" placeholder="Enter your phone number"><br>
 
             <label  class="labelf address" for="address">Address</label>
-            <textarea name="address" id="address" cols="30" rows="9"></textarea><br>
+            <textarea name="address" id="address" cols="30" rows="9" placeholder="Enter your address"></textarea><br>
 
 
             <label class="labelf" for="state" >State</label>
@@ -61,11 +63,55 @@
                 <option value="Alberta">Alberta</option>
                 <option value="saskatchewan">Saskatchewan</option>
                 <option value="manitoba">Manitoba</option>
-            </select>
-            <label class="labelf" for="pin "></label>
+            </select><br>
 
+            <label class="labelf" for="pin ">Pin code</label>
+            <input type="text" id="pin" placeholder="Enter your pin code"><br>
+
+            <label class="hobbies hobbiesf" for="hobbies">Hobbies</label>
+            <input type="checkbox" id="music" name="hobbies">
+            <label class="hobbies" for="music">Music</label>
+            <input type="checkbox" id="movies" name="hobbies">
+            <label class="hobbies" for="movies">Movies</label>
+            <input type="checkbox" id="sports" name="hobbies">
+            <label class="hobbies" for="sports" id="sports">Sports</label>
+            <input type="checkbox" id="Travel" name="hobbies">
+            <label class="hobbies" for="travel">Travel</label><br>
+
+            <label class="labelf" for="photo" >Upload photo</label> 
+            <input type="file" id="photo">
+            <br>
+            <input type="checkbox"  id="required" required>
+            <label style="font-weight: 100;" class="required"  for="required"> I hereby declare that the above information provided is true and correct</label>
+            <br>
+            <div class="g-recaptcha" data-sitekey="6LcOrW0pAAAAAIVM5i8i6UGYakBamOjt2c-JOhoV"></div>
+            <br>
+            <button id="regester">Register</button>
+            <button id="reset">Reset</button>
         </form>
 
+    </div>
+    <div id="Payment">
+        <h3>Payment</h3>
+        <form>
+            <label class="label" for="name">Card Holders name</label>
+            <input type="text" id="name">
+            <br>
+            <label class="label" for="card">Card Number</label>
+            <input type="text" id="card">
+            <br>
+            <Label class="label" for="date">Card Expiry Date</Label>
+            <input type="month" id="date" min="Jan" max="Dec" >
+            <input type="number" id="date" value="2019" min="2019" max="3032" >
+            <br>
+            <label class="label" for="cvv">Card CVV</label>
+            <input type="number" id="cvv">
+            
+
+            
+
+
+        </form>
     </div>
     
 </body>
