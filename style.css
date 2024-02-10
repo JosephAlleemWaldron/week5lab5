@@ -4,6 +4,7 @@
     background-color: rgb(255, 255, 255);
     border: 4px solid rgb(126, 36, 185);
     margin: 25px;
+    margin-left: 40%;
     box-shadow: 0 0 0 10px aqua ;   
     margin-bottom: 300px; 
 }
@@ -50,6 +51,10 @@ button{
     margin-bottom: 40px;
     background-color: rgba(233, 71, 248, 0.822);
 }
+#reset{
+    width: 180px;
+    background-color: rgb(233, 84, 248, 0.822);
+}
 
 #regester{
     margin-left: 40px;
@@ -73,9 +78,12 @@ h2{
 #payment{
     width: 500px;
     margin: 15px;
-    
-    
+    margin-left: 40%;
 }
+.inputs{
+    border-color: gray;
+}
+
 .label{
     display: inline-block;
     width: 200px;
@@ -85,6 +93,20 @@ h2{
 }
 h3{
     width: 500px;
+    font-weight: 200;
     border-bottom: 2px solid gray;
     
+}
+.save_card{
+    display: inline-block;
+    text-align:center;
+    margin-left: 40%;
+
+}
+#button{
+    width: 70px;
+    background-color: rgb(68, 221, 68);
+    color: white;
+    border-radius: 7px;
+    margin-left: 40%;
 }
